@@ -1,0 +1,22 @@
+.badge {
+  width: 16px;
+  height: 16px;
+
+  position: relative;
+  cursor: pointer;
+
+  &:after {
+    content: '';
+    position: absolute;
+    border: var(--border);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    inset: 0;
+  }
+
+  &-active {
+    &:after {
+      opacity: 1;
+    }
+  }
+}

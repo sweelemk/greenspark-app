@@ -1,0 +1,48 @@
+
+.card {
+  width: fit-content;
+  &-view {
+    border-radius: 6px;
+    background-color: var(--blue);
+    padding: 11px 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+
+    .name {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    .sub-name {
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 700;
+    }
+  }
+
+  &__textbox {
+    flex: 1;
+  }
+
+  &__settings {
+    color: var(--green);
+    font-size: 14px;
+    line-height: 17px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+.badge-list {
+  display: flex;
+  gap: 4px;
+}
