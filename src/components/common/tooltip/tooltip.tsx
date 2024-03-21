@@ -1,4 +1,4 @@
-import { TooltipIcon } from "../../icons";
+import Icon from "../../icons";
 import "./tooltip.scss";
 
 interface ITooltipProps {
@@ -10,7 +10,7 @@ const Tooltip = ({ text, link }: ITooltipProps) => {
   return (
     <span className="tooltip">
       <div className="tooltip-button">
-        <TooltipIcon />
+        <Icon name="tooltip" />
       </div>
       <div className="tooltip-container">
         <p>{text}</p>

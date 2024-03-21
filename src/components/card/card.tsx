@@ -1,32 +1,10 @@
 import { useState } from "react";
-import { Colors, TCard } from "../../types";
 import { Badge, Checkbox, Switch, Tooltip } from "../common";
-import { GreensparkIcon } from "../icons";
+import { Colors, TCard } from "../../types";
+import { colorPairs } from "../../constants";
 
 import "./card.scss";
-
-const colorPairs = {
-  green: {
-    bg: "--green",
-    color: "--white",
-  },
-  blue: {
-    bg: "--blue",
-    color: "--white",
-  },
-  beige: {
-    bg: "--beige",
-    color: "--green",
-  },
-  white: {
-    bg: "--white",
-    color: "--green",
-  },
-  black: {
-    bg: "--black",
-    color: "--white",
-  },
-};
+import Icon from "../icons";
 
 interface ICard {
   card: TCard;
@@ -52,7 +30,7 @@ const Card = ({ card, onChangeActivity }: ICard) => {
         }}
       >
         <div className="icon">
-          <GreensparkIcon />
+          <Icon name="greenspark" />
         </div>
         <div className="card-view__textbox">
           <div className="name">{`This product ${action}`}</div>

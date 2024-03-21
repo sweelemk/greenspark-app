@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
 import { Card } from "../../components";
 import { TCard } from "../../types";
-import "./greenspark.scss";
 import { getWidgets } from "../../services/product.service";
+
+import "./greenspark.scss";
 
 const Greenspark = () => {
   const isMounted = useRef(false);
